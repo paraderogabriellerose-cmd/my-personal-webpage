@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+        (function() {
+            emailjs.init({
+                publicKey: "kDyK1lGBX4x15KoSM"
+            });
+        })();
+
+        function sendEmail(event) {
+            event.preventDefault();
+
+            emailjs.sendForm(
+                "service_7740o5i",
+                "template_sb6l9hq",
+                event.target
+            )
+            .then(function() {
+                alert("Message sent successfully!");
+                event.target.reset();
+            })
+            .catch(function(error) {
+                alert("Failed to send message. Please try again.");
+                console.log(error);
+            });
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1 id="contact-section">Contact Me</h1>
+
+    <nav>
+        <a class="nav-link" href="index.html">Home</a> |
+        <a class="nav-link" href="about.html">About Me</a> |
+        <a class="nav-link" href="hobbies.html">Hobbies</a> |
+        <a class="nav-link" href="favorites.html">Favorites</a> |
+        <a class="nav-link" href="goals.html">Goals</a> |
+        <a class="nav-link" href="contact.html">Contact Me</a>
+    </nav>
+
+    <hr>
+
+    <h2>Get in Touch!</h2>
+
+    <p>
+        Please fill out the form below if you want to send me
+        feedback, questions, or inquiries.
+    </p>
+
+    <form onsubmit="sendEmail(event)">
+
+        <label>Full Name:</label><br>
+        <input type="text" name="fullname" placeholder="Enter your full name" required>
+        <br><br>
+
+        <label>Email Address:</label><br>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel" name="phone" placeholder="Enter your phone number">
+        <br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <br><br>
+
+        <label>Age:</label><br>
+        <input type="number" name="age" min="1" max="100">
+        <br><br>
+
+        <label>Year Level:</label><br>
+        <select name="yearlevel">
+            <option>Grade 11</option>
+            <option>Grade 12</option>
+            <option>College</option>
+            <option>Other</option>
+        </select>
+        <br><br>
+
+        <label>Interests:</label><br>
+        <input type="checkbox" name="interest" value="Technology"> Technology
+        <br>
+        <input type="checkbox" name="interest" value="Gaming"> Gaming
+        <br>
+        <input type="checkbox" name="interest" value="Music"> Music
+        <br>
+        <input type="checkbox" name="interest" value="Movies"> Movies
+        <br>
+        <input type="checkbox" name="interest" value="Sports"> Sports
+        <br>
+        <input type="checkbox" name="interest" value="Dancing"> Dancing
+        <br><br>
+
+        <label>Purpose of Visit:</label><br>
+        <select name="purpose">
+            <option>General Inquiry</option>
+            <option>Feedback</option>
+            <option>Collaboration</option>
+            <option>School Project</option>
+        </select>
+        <br><br>
+
+        <label>How did you find my website?</label><br>
+        <select name="source">
+            <option>Friend</option>
+            <option>Classmate</option>
+            <option>School</option>
+            <option>Search Engine</option>
+            <option>Social Media</option>
+            <option>Other</option>
+        </select>
+        <br><br>
+
+        <label>How would you rate my website?</label><br>
+        <input type="radio" name="rating" value="1"> ⭐
+        <input type="radio" name="rating" value="2"> ⭐⭐
+        <input type="radio" name="rating" value="3"> ⭐⭐⭐
+        <input type="radio" name="rating" value="4"> ⭐⭐⭐⭐
+        <input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐
+        <br><br>
+
+        <label>Preferred way to contact you:</label><br>
+        <input type="radio" name="contact" value="Email"> Email
+        <input type="radio" name="contact" value="Phone"> Phone
+        <br><br>
+
+        <label>Message:</label><br>
+        <textarea name="message" rows="5" cols="40"
+        placeholder="Write your message here" required></textarea>
+        <br><br>
+
+        <input type="checkbox" name="updates" value="Yes">
+        I would like to receive updates.
+        <br><br>
+
+        <input type="submit" value="Send Message" class="btn primary">
+        <input type="reset" value="Clear Form">
+
+    </form>
+
+    <hr>
+
+    <p>Thank you for visiting my website, God bless!</p>
+
+</body>
+</html>

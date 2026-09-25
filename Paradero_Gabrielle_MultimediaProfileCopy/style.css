@@ -1,0 +1,218 @@
+body {
+
+    color: #333333;
+
+    background-color: lightblue;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+}
+
+
+/* Main Heading */
+
+h1 {
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    text-decoration: underline;
+
+    letter-spacing: 2px;
+
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    color: white;
+
+    background: linear-gradient(to right, #4169e1, #9370db);
+
+    padding: 20px;
+
+}
+
+
+/* Other Headings */
+
+h2 {
+
+    color: darkblue;
+
+    font-family: Georgia, serif;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* Profile Information */
+
+.profile-info {
+
+    color: darkgreen;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    letter-spacing: 0.5px;
+
+    background-color: white;
+
+    padding: 15px;
+
+    opacity: 0.95;
+
+}
+
+
+/* Navigation */
+
+.nav-link {
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* Section Titles */
+
+.section-title {
+
+    color: purple;
+
+    font-family: Georgia, serif;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    text-transform: capitalize;
+
+}
+
+
+/* Form Labels */
+
+.form-label {
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+}
+
+
+/* Form Inputs */
+
+.form-input {
+
+    color: blue;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+}
+
+
+/* Buttons */
+
+.btn {
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+}
+
+
+/* Primary Button */
+
+.primary {
+
+    color: white;
+
+    background-color: darkblue;
+
+}
+
+
+/* Main Header */
+
+#main-header {
+
+    text-align: center;
+
+    background-color: lightgray;
+
+    opacity: 0.95;
+
+}
+
+
+/* Contact Section */
+
+#contact-section {
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    color: darkblue;
+
+    background: linear-gradient(to right, lightyellow, lavender);
+
+    padding: 15px;
+
+}
+
+/* Contact Form */
+
+form {
+    background: linear-gradient(to bottom, white, lavender);
+    color: #333333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+    opacity: 0.95;
+}
+
+ /* Updated for CSS Lesson 2.1 */   
+
+ /* test change */
+
+ /* GitHub test */
